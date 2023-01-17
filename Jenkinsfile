@@ -73,11 +73,11 @@ pipeline {
               waitForQualityGate abortPipeline:true
 
 
+            }  
             }
         }
-    }
-    stage("UploadArtifact") {
-        steps{
+        stage("UploadArtifact") {
+            steps{
             nexusArtifactUploader(
                 nexusVersion: 'nexus3',
                 protocol: 'http',
@@ -91,9 +91,10 @@ pipeline {
                    classifier: '',
                    file: 'target/vprofile-v2.war',
                    type: 'war']
-                ]
-            )
-         } 
+                   ]
+                )
+            } 
+        }
     }
 }
    
