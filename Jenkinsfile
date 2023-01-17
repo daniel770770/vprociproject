@@ -1,6 +1,5 @@
 pipeline {
 
-
 	agent any
 	tools {
         maven "MAVEN3"
@@ -92,9 +91,9 @@ pipeline {
                    classifier: '',
                    file: 'target/vprofile-v2.war',
                    type: 'war']
-        ]
-     )
-       
- } 
-    
+                ]
+            )
+         } 
+    }
 }
+   
