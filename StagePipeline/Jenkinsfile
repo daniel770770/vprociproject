@@ -26,6 +26,7 @@ pipeline {
         vprofileRegistry = "https://070618423247.dkr.ecr.us-east-1.amazonaws.com"
     }
 
+
     stages {
         stage('Build'){
             steps {
