@@ -1,4 +1,3 @@
-d
 pipeline {
 	agent any
 	tools {
