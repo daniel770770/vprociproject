@@ -1,4 +1,3 @@
-dsadasdADWS
 pipeline {
 
 	agent any
