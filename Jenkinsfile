@@ -1,4 +1,3 @@
-#gkgkgk
 pipeline {
 
 	agent any
