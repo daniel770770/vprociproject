@@ -39,7 +39,7 @@ pipeline {
        stage('Test'){
         steps {
             sh 'mvn -s settings.xml test'
-        }
+            }
         }
 
         stage('Checkstyle Analysis'){
@@ -47,7 +47,7 @@ pipeline {
                 sh 'mvn -s settings.xml checkstyle:checkstyle'
 
             }
-        }
+    
         stage('Sonar Analysis') {
             environment {
                 scannerHome = tool "${SONARSCANNER}"
