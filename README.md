@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ################
 =======
 #################
+>>>>>>> cicd-jenkins
+=======
+##################
 >>>>>>> cicd-jenkins
 ### Prerequisites
 - JDK 1.8 or later
