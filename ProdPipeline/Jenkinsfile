@@ -3,7 +3,10 @@ def COLOR_MAP = [
     'FAILURE': 'danger',
 ]
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cicd-jenkins
 pipeline {
     agent any
 
@@ -22,8 +25,12 @@ pipeline {
      }
 
     }
+<<<<<<< HEAD
     
 post {
+=======
+    post {
+>>>>>>> cicd-jenkins
         always {
             echo 'Slack Notifications.'
             slackSend channel: '#jenkinscicd',
@@ -31,5 +38,8 @@ post {
                 message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n More info available at: ${env.BUILD_URL}"
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cicd-jenkins
 }
